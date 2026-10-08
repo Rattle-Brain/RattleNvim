@@ -1,4 +1,4 @@
-# CustomNeoVim12Config
+# RattleNvim
 
 My Neovim config, rebuilt for **Neovim 0.12**. It leans on what the editor now does by itself: the built-in plugin manager (`vim.pack`), built-in completion, `vim.lsp.enable()`, the undo tree. Plugins only come in where they genuinely do it better. Eight plugins, about 550 lines of Lua, no plugin-manager bootstrap, no Mason UI.
 
@@ -49,8 +49,8 @@ yay -S terraform-ls helm-ls-bin jdtls   # optional, from the AUR
 ## Install
 
 ```bash
-git clone https://github.com/Rattle-Brain/CustomNeoVim12Config.git
-cd CustomNeoVim12Config
+git clone https://github.com/Rattle-Brain/RattleNvim.git
+cd RattleNvim
 ./install.sh
 ```
 

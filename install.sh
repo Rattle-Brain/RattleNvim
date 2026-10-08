@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# CustomNeoVim12Config installer
+# RattleNvim installer
 #
-#   git clone https://github.com/Rattle-Brain/CustomNeoVim12Config.git
-#   cd CustomNeoVim12Config && ./install.sh
+#   git clone https://github.com/Rattle-Brain/RattleNvim.git
+#   cd RattleNvim && ./install.sh
 #
 # 1. Checks that Neovim 0.12 or newer is installed.
 # 2. Backs up an existing ~/.config/nvim to ~/.config/nvim-old-config.tar.gz
@@ -61,7 +61,7 @@ fi
 # --- 3. Copy the config -----------------------------------------------------
 mkdir -p "$TARGET"
 for f in "${FILES[@]}"; do
-  [[ -e "$REPO_DIR/$f" ]] || die "Missing $f in $REPO_DIR. Is this the CustomNeoVim12Config repo?"
+  [[ -e "$REPO_DIR/$f" ]] || die "Missing $f in $REPO_DIR. Is this the RattleNvim repo?"
   cp -r "$REPO_DIR/$f" "$TARGET/"
 done
 green "✓ Installed the config into $TARGET"
